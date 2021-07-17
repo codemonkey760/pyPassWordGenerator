@@ -164,23 +164,26 @@
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_3">
            <item>
-            <widget class="QCheckBox" name="checkBox">
+            <widget class="QCheckBox" name="bUseCaps">
              <property name="text">
               <string>Use capital letters</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QCheckBox" name="checkBox_2">
+            <widget class="QCheckBox" name="bUseNumbers">
              <property name="text">
               <string>Use numbers</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QCheckBox" name="checkBox_3">
+            <widget class="QCheckBox" name="bUseSpecialChars">
              <property name="text">
               <string>Use special characters</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
              </property>
             </widget>
            </item>
@@ -192,21 +195,27 @@
             </widget>
            </item>
            <item>
-            <widget class="QSlider" name="horizontalSlider">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+            <widget class="QLineEdit" name="lePassWordLength">
+             <property name="text">
+              <string>16</string>
+             </property>
+             <property name="maxLength">
+              <number>2</number>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>false</bool>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_4">
+            <widget class="QPushButton" name="btnGenPassWord">
              <property name="text">
               <string>Generate Password</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_4"/>
+            <widget class="QLineEdit" name="lePassWordResult"/>
            </item>
           </layout>
          </widget>
