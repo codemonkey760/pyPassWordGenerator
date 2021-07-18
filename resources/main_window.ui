@@ -157,7 +157,7 @@
           </item>
          </layout>
         </item>
-        <item>
+        <item alignment="Qt::AlignBottom">
          <widget class="QGroupBox" name="groupBox">
           <property name="title">
            <string>Password Generator</string>
@@ -188,24 +188,72 @@
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="label_4">
-             <property name="text">
-              <string>Password Length</string>
-             </property>
-            </widget>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLineEdit" name="leSpecialChars">
+               <property name="text">
+                <string>!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnResetSpecialChars">
+               <property name="text">
+                <string>Reset</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </item>
            <item>
-            <widget class="QLineEdit" name="lePassWordLength">
-             <property name="text">
-              <string>16</string>
-             </property>
-             <property name="maxLength">
-              <number>2</number>
-             </property>
-             <property name="clearButtonEnabled">
-              <bool>false</bool>
-             </property>
-            </widget>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>Min Length:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lePassWordMinLength">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>24</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>32</string>
+               </property>
+               <property name="maxLength">
+                <number>2</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>Max Length:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lePassWordMaxLength">
+               <property name="text">
+                <string>48</string>
+               </property>
+               <property name="maxLength">
+                <number>2</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </item>
            <item>
             <widget class="QPushButton" name="btnGenPassWord">
@@ -219,9 +267,6 @@
            </item>
           </layout>
          </widget>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_2"/>
         </item>
        </layout>
       </item>
